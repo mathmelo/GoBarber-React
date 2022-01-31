@@ -1,14 +1,14 @@
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 
-import SignIn from '../pages/SignIn';
-import SignUp from '../pages/SignUp';
-import Dashboard from '../pages/Dashboard';
-import Profile from '../pages/Profile';
-import PrivateWrapper from './Route';
+import AuthLayout from '~/pages/_layouts/auth';
+import DefaultLayout from '~/pages/_layouts/default';
 
-import AuthLayout from '../pages/_layouts/auth';
-import DefaultLayout from '../pages/_layouts/default';
+import SignIn from '~/pages/SignIn';
+import SignUp from '~/pages/SignUp';
+import Dashboard from '~/pages/Dashboard';
+import Profile from '~/pages/Profile';
+import PrivateWrapper from './Route';
 
 export default function routes() {
   return (
