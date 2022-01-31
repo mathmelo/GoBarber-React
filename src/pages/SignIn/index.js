@@ -1,20 +1,30 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { Form } from '@unform/web';
 
 import logo from '~/assets/logo.svg';
+import Input from '~/components/Form/input';
 
 export default function SignIn() {
+  const handleSubmit = (data) => {
+    console.tron.log(data);
+  };
+
   return (
     <>
       <img src={logo} alt="GoBarber" />
 
-      <form>
-        <input type="email" placeholder="Seu e-mail" />
-        <input type="password" placeholder="Sua senha secreta" />
+      <Form onSubmit={handleSubmit}>
+        <Input type="email" name="email" placeholder="Seu e-mail" />
+        <Input
+          type="password"
+          name="password"
+          placeholder="Sua senha secreta"
+        />
 
-        <button type="button">Acessar</button>
+        <button type="submit">Acessar</button>
         <Link to="/register">Criar conta gratuita</Link>
-      </form>
+      </Form>
     </>
   );
 }

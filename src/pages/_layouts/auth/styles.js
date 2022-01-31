@@ -27,6 +27,7 @@ export const Content = styled.div`
       border-radius: 4px;
       height: 44px;
       margin: 0 0 10px;
+      color: #fff;
 
       &::placeholder {
         color: rgba(255, 255, 255, 0.7);
