@@ -7,14 +7,21 @@ import Dashboard from '../pages/Dashboard';
 import Profile from '../pages/Profile';
 import PrivateWrapper from './Route';
 
+import AuthLayout from '../pages/_layouts/auth';
+import DefaultLayout from '../pages/_layouts/default';
+
 export default function routes() {
   return (
     <Routes>
-      <Route path="/login" element={<SignIn />} />
-      <Route path="/register" element={<SignUp />} />
+      <Route element={<AuthLayout />}>
+        <Route path="/login" element={<SignIn />} />
+        <Route path="/register" element={<SignUp />} />
+      </Route>
       <Route path="/" element={<PrivateWrapper />}>
-        <Route path="dashboard" element={<Dashboard />} />
-        <Route path="profile" element={<Profile />} />
+        <Route element={<DefaultLayout />}>
+          <Route path="dashboard" element={<Dashboard />} />
+          <Route path="profile" element={<Profile />} />
+        </Route>
       </Route>
     </Routes>
   );
