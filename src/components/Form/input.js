@@ -6,7 +6,7 @@ import PropTypes from 'prop-types';
 export default function Input({ name, ...rest }) {
   const inputRef = useRef(null);
 
-  const { fieldName, registerField } = useField(name);
+  const { fieldName, registerField, error } = useField(name);
 
   useEffect(() => {
     registerField({
@@ -16,7 +16,12 @@ export default function Input({ name, ...rest }) {
     });
   }, [fieldName, registerField]);
 
-  return <input ref={inputRef} {...rest} />;
+  return (
+    <>
+      <input ref={inputRef} {...rest} />
+      {error && <span>{error}</span>}
+    </>
+  );
 }
 
 Input.propTypes = {
