@@ -8,6 +8,7 @@
     "@testing-library/user-event": "^13.2.1",
     "@unform/core": "^2.1.6",
     "@unform/web": "^2.1.6",
+    "axios": "^0.25.0",
     "immer": "^9.0.12",
     "polished": "^4.1.4",
     "prop-types": "^15.8.1",

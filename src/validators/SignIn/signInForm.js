@@ -1,6 +1,6 @@
 import * as Yup from 'yup';
 
-export default async function signInForm({ data, formRef }) {
+export default async function signInForm(data, formRef) {
   try {
     // Remove all previous errors
     formRef.current.setErrors({});
