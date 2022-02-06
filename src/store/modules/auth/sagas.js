@@ -26,9 +26,31 @@ export function* signIn({ payload }) {
 
     navigate('/dashboard');
   } catch (err) {
-    toast.error('Falha na autenticaçãp');
+    toast.error('Falha na autenticação');
     yield put(signFailure());
   }
 }
 
-export default all([takeLatest('@auth/SIGN_IN_REQUEST', signIn)]);
+export function* signUp({ payload }) {
+  try {
+    const { name, email, password, navigate } = payload;
+
+    yield call(api.post, 'users', {
+      name,
+      email,
+      password,
+      provider: true,
+    });
+
+    navigate('/login');
+  } catch (err) {
+    console.tron.log(err);
+    toast.error('Falha no cadastro, verifique seus dados');
+    yield put(signFailure());
+  }
+}
+
+export default all([
+  takeLatest('@auth/SIGN_IN_REQUEST', signIn),
+  takeLatest('@auth/SIGN_UP_REQUEST', signUp),
+]);
