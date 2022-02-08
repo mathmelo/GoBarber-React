@@ -14,13 +14,13 @@ export default function routes() {
   return (
     <Routes>
       <Route element={<AuthLayout />}>
-        <Route path="/login" element={<SignIn />} />
+        <Route path="/" element={<SignIn />} />
         <Route path="/register" element={<SignUp />} />
       </Route>
-      <Route path="/" element={<PrivateWrapper />}>
+      <Route element={<PrivateWrapper />}>
         <Route element={<DefaultLayout />}>
-          <Route path="dashboard" element={<Dashboard />} />
-          <Route path="profile" element={<Profile />} />
+          <Route path="/dashboard" element={<Dashboard />} />
+          <Route path="/profile" element={<Profile />} />
         </Route>
       </Route>
     </Routes>

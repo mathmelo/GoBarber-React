@@ -24,7 +24,7 @@ export function* signIn({ payload }) {
 
     yield put(signInSuccess(token, user));
 
-    navigate('/dashboard');
+    navigate('/dashboard', { replace: true });
   } catch (err) {
     toast.error('Falha na autenticação');
     yield put(signFailure());
@@ -42,7 +42,9 @@ export function* signUp({ payload }) {
       provider: true,
     });
 
-    navigate('/login');
+    toast.success('Usuário cadastrado!');
+
+    navigate('/', { replace: true });
   } catch (err) {
     console.tron.log(err);
     toast.error('Falha no cadastro, verifique seus dados');
