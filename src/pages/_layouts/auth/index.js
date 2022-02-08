@@ -1,12 +1,14 @@
 import React from 'react';
 import { Outlet } from 'react-router-dom';
 
-import { Wrapper } from './styles';
+import { Wrapper, Content } from './styles';
 
 export default function AuthLayout() {
   return (
     <Wrapper>
-      <Outlet />
+      <Content>
+        <Outlet />
+      </Content>
     </Wrapper>
   );
 }
