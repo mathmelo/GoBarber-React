@@ -8,7 +8,7 @@ import signUpForm from '~/validators/SignUp/signUpForm';
 
 import signUpRequest from '~/store/modules/auth/actions';
 
-import Input from '~/components/Form/Input';
+import Input from '~/components/Form/input';
 import logo from '~/assets/logo.svg';
 
 export default function SignUp() {
@@ -41,7 +41,7 @@ export default function SignUp() {
         />
 
         <button type="submit">Criar conta</button>
-        <Link to="/login">Já tenho login</Link>
+        <Link to="/">Já tenho login</Link>
       </Form>
     </>
   );

@@ -6,5 +6,5 @@ import { store } from '~/store';
 export default function PrivateWrapper() {
   const { signed } = store.getState().auth;
 
-  return signed ? <Outlet /> : <Navigate to="login" />;
+  return signed ? <Outlet /> : <Navigate to="/" />;
 }
