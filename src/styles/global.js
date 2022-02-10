@@ -1,6 +1,7 @@
 import { createGlobalStyle } from 'styled-components';
 
 import 'react-toastify/dist/ReactToastify.css';
+import 'react-perfect-scrollbar/dist/css/styles.css';
 
 export default createGlobalStyle`
   * {
@@ -24,6 +25,10 @@ export default createGlobalStyle`
 
   body, input, button {
     font: 14px 'Roboto', sans-serif;
+  }
+
+  input:-webkit-autofill {
+      -webkit-box-shadow: 0 0 0 30px white inset;
   }
 
   a {
