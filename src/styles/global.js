@@ -27,6 +27,10 @@ export default createGlobalStyle`
     font: 14px 'Roboto', sans-serif;
   }
 
+  input:-webkit-autofill {
+      -webkit-box-shadow: 0 0 0 30px white inset;
+  }
+
   a {
     text-decoration: none;
   }
