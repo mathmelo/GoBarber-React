@@ -8,7 +8,7 @@ import { Container, Content, Profile } from './styles';
 import Notifications from '../Notifications';
 
 export default function Header() {
-  const name = useSelector((state) => state.user.profile.name);
+  const profile = useSelector((state) => state.user.profile);
 
   return (
     <Container>
@@ -22,11 +22,15 @@ export default function Header() {
           <Notifications />
           <Profile>
             <div>
-              <strong>{name}</strong>
+              <strong>{profile.name}</strong>
               <Link to="/profile">Meu Perfil</Link>
             </div>
             <img
-              src="https://uploads.commoninja.com/searchengine/wordpress/adorable-avatars.png"
+              src={
+                profile.avatar
+                  ? profile.avatar.url
+                  : 'https://uploads.commoninja.com/searchengine/wordpress/adorable-avatars.png'
+              }
               alt="Profile"
             />
           </Profile>

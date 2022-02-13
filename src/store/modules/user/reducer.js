@@ -11,6 +11,11 @@ export default function user(state = INITIAL_STATE, action) {
       return produce(state, (draft) => {
         draft.profile = action.payload.user;
       });
+    case '@auth/SIGN_OUT':
+      return produce(state, (draft) => {
+        draft.profile = null;
+        draft.loading = false;
+      });
     case '@user/USER_UPDATE_SUCCESS':
       return produce(state, (draft) => {
         draft.loading = false;

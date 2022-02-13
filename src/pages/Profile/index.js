@@ -1,21 +1,32 @@
 import React, { useRef } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 import { useSelector, useDispatch } from 'react-redux';
 import { userUpdateRequest } from '~/store/modules/user/actions';
+import { signOut } from '~/store/modules/auth/actions';
 
 import { Form } from '@unform/web';
 import Input from '~/components/Form';
 import AvatarInput from './AvatarInput';
+
 import { Container } from './styles';
 
 export default function Profile() {
   const formRef = useRef(null);
+  const navigate = useNavigate();
+
   const dispatch = useDispatch();
   const profile = useSelector((state) => state.user.profile);
   const loading = useSelector((state) => state.user.loading);
 
   const handleSubmit = async (data) => {
     dispatch(userUpdateRequest(data));
+  };
+
+  const handleSignOut = () => {
+    dispatch(signOut(navigate));
+
+    navigate('/');
   };
 
   return (
@@ -45,7 +56,9 @@ export default function Profile() {
         </button>
       </Form>
 
-      <button type="button">Sair do GoBarber</button>
+      <button onClick={handleSignOut} type="button">
+        Sair do GoBarber
+      </button>
     </Container>
   );
 }
