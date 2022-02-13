@@ -1,22 +1,28 @@
 import React, { useRef } from 'react';
+
+import { useSelector, useDispatch } from 'react-redux';
+import { userUpdateRequest } from '~/store/modules/user/actions';
+
 import { Form } from '@unform/web';
-import { useSelector } from 'react-redux';
-
 import Input from '~/components/Form';
-
+import AvatarInput from './AvatarInput';
 import { Container } from './styles';
 
 export default function Profile() {
   const formRef = useRef(null);
+  const dispatch = useDispatch();
   const profile = useSelector((state) => state.user.profile);
+  const loading = useSelector((state) => state.user.loading);
 
   const handleSubmit = async (data) => {
-    console.tron.log(data);
+    dispatch(userUpdateRequest(data));
   };
 
   return (
     <Container>
       <Form initialData={profile} ref={formRef} onSubmit={handleSubmit}>
+        <AvatarInput name="avatar_id" />
+
         <Input name="name" placeholder="Nome completo" />
         <Input name="email" placeholder="Seu endereço de e-mail" />
 
@@ -34,7 +40,9 @@ export default function Profile() {
           placeholder="Confirme sua senha"
         />
 
-        <button type="submit">Atualizar perfil</button>
+        <button type="submit">
+          {loading ? 'Carregando...' : 'Atualizar perfil'}
+        </button>
       </Form>
 
       <button type="button">Sair do GoBarber</button>
