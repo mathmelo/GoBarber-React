@@ -8,7 +8,7 @@ import signUpForm from '~/validators/SignUp/signUpForm';
 
 import signUpRequest from '~/store/modules/auth/actions';
 
-import Input from '~/components/Form/input';
+import Input from '~/components/Form';
 import logo from '~/assets/logo.svg';
 
 export default function SignUp() {

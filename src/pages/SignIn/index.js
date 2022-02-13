@@ -5,7 +5,7 @@ import { Form } from '@unform/web';
 
 import { signInRequest } from '~/store/modules/auth/actions';
 
-import Input from '~/components/Form/input';
+import Input from '~/components/Form';
 import logo from '~/assets/logo.svg';
 
 import signInForm from '~/validators/SignIn/signInForm';
