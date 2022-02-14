@@ -2,8 +2,8 @@ import styled from 'styled-components';
 // import { darken } from 'polished';
 
 export const Container = styled.div`
-  max-width: 600px;
-  margin: 50px auto;
+  max-width: 750px;
+  margin: 40px auto;
 
   display: flex;
   flex-direction: column;
@@ -27,7 +27,7 @@ export const Container = styled.div`
 
   ul {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     grid-gap: 15px;
     margin-top: 30px;
   }
