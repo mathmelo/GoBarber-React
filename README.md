@@ -1,70 +1,96 @@
-# Getting Started with Create React App
+<div align="center">
+    <img src="./src/assets/logo-purple.svg" height="30"/>
+  <h1>GoBarber</h1>
+</div>
+<p align="center">🚀 Appointment Management for Barber Services</p>
+<p align="center">
+  <img alt="NPM" src="https://img.shields.io/github/license/mathmelo/GoBarber-React-Frontend">
+  <img alt="NPM" src="https://img.shields.io/github/issues/mathmelo/GoBarber-React-Frontend">
+  <img alt="NPM" src="https://img.shields.io/github/forks/mathmelo/GoBarber-React-Frontend">
+  <img alt="NPM" src="https://img.shields.io/github/stars/mathmelo/GoBarber-React-Frontend">
+</p>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<div align="center">
+ <a href="#-objective">objective</a> •
+ <a href="#-roadmap">roadmap</a> •
+ <a href="#-technologies">technologies</a> •
+ <a href="#-licence">license</a> •
+ <a href="#-author">author</a>
+</div>
 
-## Available Scripts
+---
+</br>
 
-In the project directory, you can run:
+<p align="center">
+  <img src="./.github/GoBarber.png" height="500" margin-top="400">
+</p>
 
-### `yarn start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `yarn test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 💡 Objective
+<p>The main purpose of this Web App is to connect service providers (barbers) to their customers, so they can more easily manage their appointments.</p>
+<p>Basically, the web version of the project serves to inform service providers (barbers) about appointments made by their clients. It is possible to:</p>
 
-### `yarn build`
+- Manage provider account (Create, edit, login and logout)
+- View appointments
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 🎌 Roadmap
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Prerequisites
+Before starting, you will need to have the following tools installed on your machine:
+<ul>
+  <li><a href="https://nodejs.org/en/">Node</a></li>
+</ul>
 
-### `yarn eject`
+You can also use npm, but we seriously recommend yarn.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Also it's nice to have an editor to work with the code like [VSCode](https://code.visualstudio.com/).
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Running the server
+**🚫 Important**
+- To start this server, you will need to install and run the [GoBarber API](https://github.com/mathmelo/GoBarber-NodeJS-Backend)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+**Execute the commands**
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+```bash
+# Clone this repository
+$ git clone https://github.com/mathmelo/GoBarber-React-Frontend
 
-## Learn More
+# Access the project folder in the terminal/cmd
+$cd GoBarber-React-Frontend
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+# Install dependencies
+$ yarn
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+# Run server
+$ yarn start
 
-### Code Splitting
+# The server will start on port:3000 - go to <http://localhost:3000>
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## 💜 Technologies
+- Javascript
+- ReactJS
+- Redux, Redux Saga, Redux Persist
+- Date Fns
+- Styled Components
+- Unform
 
-### Analyzing the Bundle Size
+## 📕 License
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Read the license [here](https://github.com/mathmelo/GoBarber-React-Frontend/blob/main/LICENSE).
 
-### Making a Progressive Web App
+## 🤓 Author
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Informations about [me](https://github.com/mathmelo).
+Send me a message! ;)
 
-### Advanced Configuration
+<br />
+<br />
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+<h4 align="center">
+	🚧  GoBarber 🚀 In construction...  🚧</br>
+</h4>
