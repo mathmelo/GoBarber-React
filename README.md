@@ -4,10 +4,10 @@
 </div>
 <p align="center">🚀 Appointment Management for Barber Services</p>
 <p align="center">
-  <img alt="NPM" src="https://img.shields.io/github/license/mathmelo/GoBarber-React-Frontend">
-  <img alt="NPM" src="https://img.shields.io/github/issues/mathmelo/GoBarber-React-Frontend">
-  <img alt="NPM" src="https://img.shields.io/github/forks/mathmelo/GoBarber-React-Frontend">
-  <img alt="NPM" src="https://img.shields.io/github/stars/mathmelo/GoBarber-React-Frontend">
+  <img alt="NPM" src="https://img.shields.io/github/license/mathmelo/GoBarber-React">
+  <img alt="NPM" src="https://img.shields.io/github/issues/mathmelo/GoBarber-React">
+  <img alt="NPM" src="https://img.shields.io/github/forks/mathmelo/GoBarber-React">
+  <img alt="NPM" src="https://img.shields.io/github/stars/mathmelo/GoBarber-React">
 </p>
 
 <div align="center">
@@ -51,16 +51,16 @@ Also it's nice to have an editor to work with the code like [VSCode](https://cod
 
 ### Running the server
 **🚫 Important**
-- To start this server, you will need to install and run the [GoBarber API](https://github.com/mathmelo/GoBarber-NodeJS-Backend)
+- To start this server, you will need to install and run the [GoBarber API](https://github.com/mathmelo/GoBarber-NodeJS)
 
 **Execute the commands**
 
 ```bash
 # Clone this repository
-$ git clone https://github.com/mathmelo/GoBarber-React-Frontend
+$ git clone https://github.com/mathmelo/GoBarber-React
 
 # Access the project folder in the terminal/cmd
-$cd GoBarber-React-Frontend
+$cd GoBarber-React
 
 # Install dependencies
 $ yarn
@@ -81,7 +81,7 @@ $ yarn start
 
 ## 📕 License
 
-Read the license [here](https://github.com/mathmelo/GoBarber-React-Frontend/blob/main/LICENSE).
+Read the license [here](https://github.com/mathmelo/GoBarber-React/blob/main/LICENSE).
 
 ## 🤓 Author
 
